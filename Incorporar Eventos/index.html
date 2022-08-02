@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<!-- meta descripcion: de q se trata mi sitio-->
+<!-- meta desc -->
+    <meta name="description" content="Tienda online de artículos de Iluminación y Decoración de Interiores - Empresa dedicada a la elaboración de productos de iluminación y decoración para el hogar. Pedidos personalizados y fabricados con el máximo empeño y dedicación."> <!-- e/ 70-320 c estrc  -->
+<!-- meta kw -->
+    <meta name="keywords"  content="decoración, interior, hogar, luz, madera, iluminación, casa, deco, velador, lienzo, cuadros, lámpara, aplique, luces, ideas, living, rústico, pared, caños"> <!-- min 18 c -->
+
+<!-- protocolo open graph -->
+    <meta property="og:title"content="LUCIMADERA - Tienda de Iluminación y Decoración de Interiores / PRODUCTOS"> 
+    <meta property="og:url" content="https://www.Lucimadera.com/Productos">
+    <meta property="og:description" content="Tienda online de artículos de Iluminación y Decoración de Interiores"> 
+  
+<!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
+<!-- fin google fonts -->
+    
+    <title>PRODUCTOS</title>
+
+<!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+
+<!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+
+<body>   
+       
+        
+<div class="container">
+  <header class="titulosh2">
+
+    <h1>Interactuar con HTML</h1>
+    <h2>PRODUCTOS</h2>
+    <h3>JOAQUÍN TORNABÉ</h3>
+    
+  </header> <!-- fin header -->
+
+
+<main> <!-- bootstrap cards -->
+
+    <div class="row g-4"> <!-- __________ PRIMER FILA _________ -->
+    <!-- g4=espaciado entre cards -->
+    
+    
+    <!-- CARD 2 - APLIQUE DE PARED-->
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card h-100">
+         
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h5>APLIQUE DE PARED</h5>
+              
+              </p>
+              <a href="galeria.html" class="card-link btn btn-primary">$ 1000</a>
+            </div>  <!-- card body -->
+        </div>      <!-- card -->
+      </div>        <!-- col -->
+
+    <!-- card 1 - CUADRO CON LAMPARA -->
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="card h-100">
+        
+        <div class="card-body d-flex flex-column justify-content-between">
+          <h5>CUADRO CON LÁMPARA</h5>
+            
+            </p>
+            <a href="galeria.html" class="card-link btn btn-primary">$ 2000</a>
+        </div>  <!-- card body -->
+      </div>    <!-- card -->
+    </div>      <!-- col -->
+
+
+    <!-- card 3 - CUADRO DECO CON LUZ -->
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card h-100">
+          
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5>CUADRO DECO CON LUZ</h5>
+                 
+                 <a href="galeria.html" class="card-link btn btn-primary">$ 3000</a>
+              </div>    <!-- card body -->
+        </div>          <!-- card -->
+      </div>            <!-- col -->
+    
+
+   
+    
+    <!-- card 4 - VELADOR DE PARED -->
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card h-100">
+          
+          <div class="card-body d-flex flex-column justify-content-between">
+              <h5>VELADOR DE PARED</h5>
+            
+            <a href="galeria.html" class="card-link btn btn-primary">$ 4000</a>
+          </div>    <!-- card body -->
+        </div>      <!-- card -->
+      </div>        <!-- col -->
+      
+
+    <!-- card 5 - CUADRO CON ESTANTE -->
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="card h-100">
+      
+      <div class="card-body d-flex flex-column justify-content-between">
+            <h5>CUADRO CON ESTANTE</h5>
+          
+          <a href="galeria.html" class="card-link btn btn-primary">$ 5000</a>
+        </div>    <!-- card body -->
+      </div>      <!-- card -->
+    </div>        <!-- col -->
+
+    <!-- card 6 - LAMPARA DECO -->
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card h-100">
+          
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h5>LÁMPARA DECO</h5>
+            
+            <a href="galeria.html" class="card-link btn btn-primary">$ 6000</a>
+            </div>
+        </div>
+      </div>
+    
+    
+    
+    </div><!-- ________________________ fin row cards ________________________ -->
+    
+
+</main> <!-- fin cards-->
+
+
+
+
+    <H4 style="padding-top: 25px;">CALCULE SU PAGO EN CUOTAS - 3/6/12/18 SIN INTERES! </H4>
+
+
+<form id="formulariodecompra" style="padding-top: 15px;">
+    <label for="producto">PRODUCTO:</label>
+    <input id="producto" type="text">
+    <p id="mensaje-error"></p>
+    <br>
+
+    <label for="valor">VALOR:</label> <!--ENTRADA-->
+    <input id="valor" type="number">
+    <p id="mensaje-error"></p>
+    <br>
+
+    <label for="cantidad">CANTIDAD:</label>
+    <input id="cantidad" type="number">
+    <p id="mensaje-error"></p>
+    <br>
+
+    <!-- calcular cuotas -->
+
+    <label for="cuotas">CUOTAS:</label>
+    <input id="cuotas" type="number">
+    <p id="mensaje-error"></p>
+    <br>
+    <br>
+    <input type="submit">
+
+    <!-- valor de la cuota -->
+
+</form>
+
+    <p id="mensaje-error"></p>
+
+<hr>
+
+<table id="tabla" style="padding-bottom: 50px;">
+    <tr>
+      <th>Producto</th>
+      <th>Valor</th>
+      <th>Cantidad</th>
+      <th>Cuotas</th>
+      
+    </tr>
+
+    <div id="total"></div>
+
+</table>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Interactuar_html.js"></script>
+</body>
+</html>
