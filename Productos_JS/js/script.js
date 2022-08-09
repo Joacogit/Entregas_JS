@@ -55,29 +55,24 @@ class EltotaldelCarrito {
      
 }
 
-
 const carro = new EltotaldelCarrito()
-
-
 
 //_______________ funcion sumar carrito ________________
 
-let suma = document.getElementById('total_compra');     //  Declaración de variable para guardar el resultado de la suma en el ID 'total_compra'
+const importeTotal = document.getElementById("total_compra")
+let suma = document.createElement('total_compra');     //  Declaración de variable para guardar el resultado de la suma en el ID 'total_compra'
 
 function sumar() {
-    
     let CompraTotal = lista_productos.reduce((acc, Producto) => {
     return acc + Producto.cantidad * Producto.precio;
 }, 0);     
   
 suma.innerHTML = `
-<th><strong>${muestraCarrito}</strong></th>
+<th><strong>${CompraTotal}</strong></th>
 `    
+importeTotal.append(div)
+
 }
-
-
-
-
 
 
 
@@ -110,9 +105,19 @@ for (const elemento of evento_boton_agregar) {
     })  
 }
 
+//setItem → guarda en el navegador (clave/valor)
 
-const productosStorage = localStorage.setItem('Productos', JSON.stringify(producto));
+localStorage.setItem('Articulo1','Aplique de pared');
+localStorage.setItem('Articulo2','Cuadro con lámpara');
+localStorage.setItem('Articulo3','Cuadro deco con luz');
+localStorage.setItem('Articulo4','Velador de pared');
+localStorage.setItem('Articulo5','Cuadro con estante');
+localStorage.setItem('Articulo6','Lámpara deco');
 
-localStorage.getItem('Productos', JSON.parse(producto));
+//getItem → devuelve el valor correspondiente a la clave q le marco 
+const Articulo = localStorage.getItem('Articulo1');
+console.log(Articulo);
+
+
 
 
